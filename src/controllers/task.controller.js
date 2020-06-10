@@ -62,7 +62,7 @@ export async function updateTask(req, res) {
     try {
 
         const task = await Task.findOne({
-            attributes: ['name', 'projectid', 'done', 'id'],
+            attributes: ['id'],
             where: { id }
         });
 

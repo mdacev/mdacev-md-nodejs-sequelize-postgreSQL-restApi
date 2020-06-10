@@ -76,7 +76,7 @@ export async function updateProject(req, res) {
     try {
 
         const project = await Project.findOne({
-            attributes: ['id', 'name', 'priority', 'description', 'deliverydate'],
+            attributes: ['id'],
             where: {
                 id
             }
